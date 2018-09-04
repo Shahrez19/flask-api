@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Patient DataSheet</title>
+    </head>
+    <h1>Patient DataSheet</h2>
+    <body>
+        <table border="1">
+        <tr>
+            <th>Id</th>
+            <th>First Name</th>
+            <th>Middle Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>dob</th>
+            <th>Gender</th>
+            <th>Status</th>
+            <th>Terms accepted</th>
+            <th>Terms accepted_at</th>
+            <th>Street taddress</th>
+            <th>City</th>
+            <th>State</th>
+            <th>Zip Code</th>
+            <th>Phone</th>
+        </tr>
+        {% for item in data %}
+        <tr>
+            <td>{{item[0]}}</td>
+            <td>{{item[1]}}</td>
+            <td>{{item[2]}}</td>
+            <td>{{item[3]}}</td>
+            <td>{{item[4]}}</td>
+            <td>{{item[5]}}</td>
+            <td>{{item[6]}}</td>
+            <td>{{item[7]}}</td>
+            <td>{{item[8]}}</td>
+            <td>{{item[9]}}</td>
+            <td>{{item[10]}}</td>
+            <td>{{item[11]}}</td>
+            <td>{{item[12]}}</td>
+            <td>{{item[13]}}</td>
+            <td>{{item[14]}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    {}
+    <a href="#">1</a>
+    <a href="#">2</a>
+
+    </body>
+</html>
